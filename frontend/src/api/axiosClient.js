@@ -1,5 +1,8 @@
 import axios from "axios";
 
+console.log(process.env.baseURL)
+
+//Todo : baseurl needs to be in env 
 export const axiosClient = axios.create({
   baseURL: "http://localhost:4000/api",
   timeout: 10000,
